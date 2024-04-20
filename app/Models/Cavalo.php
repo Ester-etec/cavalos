@@ -12,6 +12,7 @@ class Cavalo extends Model
         'nome',
         'raca',
         'idade',
+        
     ];
     
 }

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <title>Gestão de controle de Hotel</title>
-</head>
+    <title>Gestão de controle de Rancho</title>
+</head class=".bg-success-subtle">
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary absolute-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary absolute-top" class=".text-success-emphasis">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Hotel</a>
+                <a class="navbar-brand" href="#">Lucky</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -28,16 +28,17 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Cliente
+                                Cavalos
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-cliente')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="{{route('gerenciar-cliente')}}">Gerenciar</a></li>
+                                <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-cavalo')}}">Cadastrar</a></li>
+                                <li><a class="dropdown-item" href="{{route('gerenciar-cavalo')}}">Gerenciar</a></li>
                              
                                 
                             </ul>
                         </li>
 
+                        
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -46,29 +47,6 @@
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-funcionario')}}">Cadastrar</a></li>
                                 <li><a class="dropdown-item" href="{{route('gerenciar-funcionario')}}">Gerenciar</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Quarto
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-quarto')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="{{route('gerenciar-quarto')}}">Gerenciar</a></li>
-                                
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Reserva
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="{{route('show-formulario-cadastro-reserva')}}">Cadastrar</a></li>
-                                <li><a class="dropdown-item" href="{{route('gerenciar-reserva')}}">Gerenciar</a></li>
                             </ul>
                         </li>
                         

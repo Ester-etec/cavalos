@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use App\Models\Cavalo;
+
 class CavaloController extends Controller
 {
    public function showHome(){
@@ -20,7 +21,8 @@ class CavaloController extends Controller
         $dadosValidos = $request->validate([
             'nome' => 'string|required',
             'raca' => 'string|required',
-            'idade' => 'numeric|required'
+            'idade' => 'int|required'
+            
         ]);
 
         Cavalo::create($dadosValidos);

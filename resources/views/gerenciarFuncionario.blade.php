@@ -25,13 +25,13 @@
       </tr>
     </thead>
     <tbody>
-      
+      @foreach($registrosFuncionarios as $registrosFuncionariosLoop  )
       <tr>
-        <th scope="row">01</th>
-        <td>119897-999</td>
-        <td>Samsung</td>
+        <th scope="row">{{$registrosFuncionariosLoop->id}}</th>
+        <td>{{$registrosFuncionariosLoop->nome}}</td>
+        <td>{{$registrosFuncionariosLoop->funcao}}</td>
         <td>
-          <a href="">
+          <a href="{{route('mostrar-funcionario',$registrosFuncionariosLoop->id)}}">
             <button type="button" class="btn btn-primary">X</button>
           </a>
         </td>
